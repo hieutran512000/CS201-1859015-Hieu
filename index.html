@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Shop page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- This is the CS201 Web Dev 1 final. Your task is to make a responsive e-commerce site using
+  BS4 as your CSS front end framework and load products from the FakeStore API (linked below) -->
+  <!-- FakeStoreAPI end point: https://fakestoreapi.com/products -->
+     <!--Navigation= website's header-->
+     <nav class="navbar navbar-expand-md navbar-light bg-light  sticky-top">
+        <div class="container-fluid"> <!--chiếm toàn bộ chiều ngang-->
+            <a class="navbar-brand" href="#"><!--show your company's logo-->
+                <img src="images/vector_blue_background_clock_icon_280623.jpg" alt="ảnh logo" height="50">
+                <h1 id=nav-chu>watches</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <!--navbar-toggler là nút menu lật(khi ấn vào sẽ xuất list)-->
+                <!--data-toggle="collapse" là khi ấn vào icon sẽ không đóng nhanh mà sẽ đóng từ từ như kéo rèm-->
+                <!--data-target="#navbarResponsive" là id cho div dưới hoạt động-->
+                <span class="navbar-toggler-icon"></span> <!--icon 3 gạch menu khi thu nhỏ kích thước-->
+                </button>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <!--id="navbarResponsive" liên kết với data-target="#navbarResponsive" khi ấn sẽ xuất list-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Women's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Men's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Unisex</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collection</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="  background-image: -webkit-linear-gradient(35deg, #14cfe7 20%, #3ed5e9 100%); color: white; padding: 40px;">
+        <div class="row">
+            <div class="col">
+                <img src="images/hinhnen.jpg" width="700px" style="margin-left: 100px;">
+            </div>
+            <div class="col text-lg-left" style="margin-right: 200px ;">
+                <h2 style="font-size: 60px;" id="text-lon">NEW <br> ARRIVALS</h2>
+                    <div style="margin-left: 150px;">
+                        <a href="#" style="margin: auto;">
+                            <button type="button"class="btn btn-outline-secondary" style="color: #14cfe7; border: 2px solid white; border-radius: 25px;font-size: 22px; padding: 10px 50px; background-color: white; margin-top: 20px;">Shop now!</button>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="thanbai1">    
+        <div class="container-fluid ">
+            <div class="row text-left">
+                <div class="col ">	
+                    <div class="container-fluid " style="border: 2px solid #97dbe7;" >
+                        <div class="row text-left">
+                            <div class="col ">
+                                <h2>Men's watches</h2>
+                                <h3>25% off</h3>
+                            </div>
+                            <div class="col ">
+                                <img src="images/man's watches.jfif" alt="" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">	
+                    <div class="container-fluid " style="border: 2px solid #97dbe7;">
+                        <div class="row text-left">
+                            <div class="col ">
+                                <h2>Men's watches</h2>
+                                <h3>25% off</h3>
+                            </div>
+                            <div class="col ">
+                                <img src="images/man's watches.jfif" alt="" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">	
+                    <div class="container-fluid " style="border: 2px solid #97dbe7;">
+                        <div class="row text-left">
+                            <div class="col ">
+                                <h2>Men's watches</h2>
+                                <h3>25% off</h3>
+                            </div>
+                            <div class="col ">
+                                <img src="images/man's watches.jfif" alt="" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>	
+        </div>
+    </div>
+
+    <div class="than-text"><h2>New Products</h2></div>
+
+    <div class="thanbai2">    
+        <div class="container-fluid " >
+            <div class="row text-center" >
+                <div class="col " style="border: 2px solid #97dbe7;">	
+                    <div class="col ">
+                        <img src="images/than 2-1.jfif" alt="">
+                    </div>
+                    <div class="col ">
+                        <h2>Citizen CT-BI5060-51H</h2>
+                        <h3>7.990.000 đ</h3>
+                    </div>
+                </div>
+
+                <div class="col " style="border: 2px solid #97dbe7;">	
+                    <div class="col ">
+                        <img src="images/than 2-1.jfif" alt="">
+                    </div>
+                    <div class="col ">
+                        <h2>Citizen CT-BI5060-51H</h2>
+                        <h3>7.990.000 đ</h3>
+                    </div>
+                </div>
+
+
+                <div class="col " style="border: 2px solid #97dbe7;">	
+                    <div class="col ">
+                        <img src="images/than 2-1.jfif" alt="">
+                    </div>
+                    <div class="col ">
+                        <h2>Citizen CT-BI5060-51H</h2>
+                        <h3>7.990.000 đ</h3>
+                    </div>
+                </div>
+
+                <div class="col " style="border: 2px solid #97dbe7;">	
+                    <div class="col ">
+                        <img src="images/than 2-1.jfif" alt="">
+                    </div>
+                    <div class="col ">
+                        <h2>Citizen CT-BI5060-51H</h2>
+                        <h3>7.990.000 đ</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="than-text"><h2>Latest Post</h2></div>
+
+    <div class="thanbai3">    
+        <div class="container-fluid ">
+            <div class="row text-center">
+                <div class="col " id="than3-b">	
+                    <div class="col ">
+                        <img src="images/tim.png" alt="" style="max-width: 100px;">
+                    </div>
+                    <div class="col " >
+                        <h2>100% money back guarantee</h2>
+                        <h3>We provide you with fast and free delivery We provide you with fast and free delivery</h3>
+                    </div>
+                </div>
+
+                <div class="col " id="than3-b">	
+                    <div class="col ">
+                        <img src="images/truck.jpg" alt="" style="max-width: 100px;">
+                    </div>
+                    <div class="col ">
+                        <h2>100% money back guarantee</h2>
+                        <h3>We provide you with fast and free delivery We provide you with fast and free delivery</h3>
+                    </div>
+                </div>
+
+
+                <div class="col " id="than3-b">	
+                    <div class="col ">
+                        <img src="images/card.png" alt="" style="max-width: 100px;">
+                    </div>
+                    <div class="col ">
+                        <h2>100% money back guarantee</h2>
+                        <h3>We provide you with fast and free delivery We provide you with fast and free delivery</h3>
+                    </div>
+                </div>
+        </div>
+    </div>
+   
+    <div class="than-text"><h2>Latest Post</h2></div>
+
+    <div class="thanbai5">
+        <div class="container-fluid" id="gioithieu5" style="padding-top: 100px;">
+            <div class="row text-left">
+                <div class="col" style="border: 2px solid #97dbe7; box-shadow: 3px 3px #666">
+                    <img src="images/icon-hang1.png" alt="">	  				
+                </div>
+                <div class="col" style="border: 2px solid #97dbe7;box-shadow: 3px 3px #666">
+                    <img src="images/icon-hang-2.jpg" alt="">	  				
+                </div>
+                <div class="col" style="border: 2px solid #97dbe7;box-shadow: 3px 3px #666">
+                    <img src="images/icon-hang-3.png" alt="">	  				
+                </div>
+                <div class="col" style="border: 2px solid #97dbe7;box-shadow: 3px 3px #666">
+                    <img src="images/icon-hang-4.jpg" alt="">	  				
+                </div>
+                <div class="col" style="border: 2px solid #97dbe7;box-shadow: 3px 3px #666">
+                    <img src="images/icon-hang-5.jpg" alt="">	  				
+                </div>
+            </div>	
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="staticcatalog.js" charset="utf-8"></script>
+</body>
+<footer>
+    <div class="container-fluid" style="background-color: #4a4a4a; color: white;">
+        <div class="row text-left">
+            <div class="col" id="ketbai1">
+
+                <div class="row text-left" style="    border-right: 1px solid #979797; border-bottom: 1px solid #979797; padding: 50px 50px 50px 0;">
+                    <div class="col">
+                        <div class="card-item">
+                            <div>
+                                <div class="card-title" style="color: #97dbe7;">Bangkok, Thailand</div>
+                                <div class="card-detail">
+                                    <p>Bangkok Bhiraj Tower</p>
+                                    <p>Bangkok Bhiraj Tower</p>
+                                    <p>Bangkok Bhiraj Tower</p>
+                                    <p>Bangkok Bhiraj Tower</p>
+                                    <p>+66 (0)2 117 4344</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-item">
+                            <div>
+                                <div class="card-title" style="color: #97dbe7;">Stockholm, Sweden</div>
+                                <div class="card-detail">
+                                    <p>Västmannagatan 43</p>
+                                    <p>Västmannagatan 43</p>
+                                    <p>Västmannagatan 43</p>
+                                    <p>Västmannagatan 43</p>
+                                    <p>+46 (0)8 30 75 80</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-item">
+                            <div>
+                                <div class="card-title" style="color: #97dbe7;">Norrköping, Sweden</div>
+                                <div class="card-detail">
+                                    <p>Slottsgatan 116</p>
+                                    <p>Slottsgatan 116</p>
+                                    <p>Slottsgatan 116</p>
+                                    <p>Slottsgatan 116</p>
+                                    <p>+46 (0)8 30 75 80</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" id="ketbai2" style="    border-bottom: 1px solid #979797;">
+                <h5 style="color: #97dbe7;">Contact us</h5>
+                <div>
+                    <input type="text" name="Question7" id="Question7" class="form-control" placeholder="Name *" value="" required="">
+                </div>
+                <div>
+                    <input type="email" name="Question8" id="Question8" class="form-control" placeholder="Email *" value="" required="">	
+                </div>
+                <div>
+                    <input name="Question9" id="Question9" class="form-control" placeholder="Message *" value="" required="">	
+                </div>
+                <a href="#">
+                    <button type="button" class="btn btn-outline-secondary btn-lg" style="color: white; border: 2px solid #97dbe7; border-radius: 25px; font-size: 22px; padding: 10px 70px;">SEND</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="ketbai3">
+            <div>© 2021 Bizone. All rights reserved</div>
+    </div>
+</footer>
+    <script type="text/javascript" src="staticcatalog.js"></script>
+</html>
